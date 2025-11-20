@@ -687,23 +687,25 @@ body {
 
 
 @media (max-width: 768px) {
+  /* Modal container */
   #artwork-modal .modal-content {
+    width: 100%;
     max-width: 100%;
-    max-height: calc(100vh - 100px); /* leave space for header and bottom */
-    border-radius: 12px 12px 0 0;
-    padding: 0;
+    max-height: calc(100vh - 80px); /* 80px for navbar */
+    margin: 80px auto 20px; /* starts below header, small bottom gap */
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-top: 80px; /* starts below the header */
+    padding: 0;
   }
 
-  /* Image stays fixed at top */
+  /* Image section fixed height */
   #artwork-modal .modal-image {
     width: 100%;
-    max-height: 40vh; /* adjust height as needed */
-    overflow: hidden;
+    height: 35vh; /* adjust if needed */
     flex-shrink: 0;
+    overflow: hidden;
   }
 
   #artwork-modal .modal-image img {
@@ -712,10 +714,12 @@ body {
     object-fit: cover;
   }
 
-  /* Scrollable text/details area */
+  /* Details section scrollable */
   #artwork-modal .modal-details {
     padding: 20px;
     overflow-y: auto;
     flex-grow: 1;
   }
 }
+
+
