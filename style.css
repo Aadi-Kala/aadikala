@@ -450,13 +450,14 @@ body {
 }
 
 /* ==========================
-   ORIGINALITY SECTION MODERN UI (Mobile Optimized)
+   ORIGINALITY SECTION MODERN UI
+   Desktop + Mobile Optimized
    ========================== */
 .originality-section {
   padding: 100px 20px;
   background: linear-gradient(135deg, #FFFEE9 0%, #ECB984 100%);
   position: relative;
-  overflow: hidden; /* prevent accidental overflow */
+  overflow: hidden;
 }
 
 .originality-title {
@@ -477,11 +478,11 @@ body {
   margin-bottom: 60px;
 }
 
-/* Grid layout */
+/* Desktop Grid layout */
 .originality-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(2, 1fr); /* Desktop: 2 columns */
+  gap: 60px;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -492,8 +493,8 @@ body {
 /* Card container */
 .originality-card {
   display: flex;
-  align-items: stretch; /* ensure full height */
-  gap: 30px;
+  align-items: stretch; /* full card height */
+  gap: 40px;
   background: #FFF8F0;
   border-radius: 25px;
   overflow: hidden;
@@ -575,22 +576,31 @@ body {
   line-height: 1.8;
 }
 
-/* Responsive adjustments */
+/* =========================
+   Responsive Adjustments
+   ========================= */
 @media (max-width: 1024px) {
+  .originality-cards {
+    grid-template-columns: 1fr; /* tablet: single column */
+    gap: 40px;
+    padding: 0 15px;
+  }
+
   .originality-card, .originality-card.reverse {
     flex-direction: column;
     text-align: center;
   }
+
   .card-text { padding: 25px; }
   .card-image { min-height: 220px; border-radius: 25px 25px 0 0; }
 }
 
 @media (max-width: 768px) {
   .originality-cards {
-    grid-template-columns: 1fr;
     gap: 25px;
     padding: 0 15px;
   }
+
   .originality-card { gap: 20px; }
   .card-text h3 { font-size: 1.6em; }
   .card-text p { font-size: 1em; }
@@ -603,3 +613,4 @@ body {
   .originality-subtitle { font-size: 1.1em; margin-bottom: 40px; }
   .card-text { padding: 20px 15px; }
 }
+
