@@ -307,3 +307,15 @@ async function loadPortfolio() {
         console.error("Error loading portfolio:", error);
     }
 }
+
+const originalityImages = [
+    'images/handmade.webp',
+    'images/uta.webp',
+    'images/certificate.webp',
+    'images/heritage.webp'
+  ];
+
+  originalityImages.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
