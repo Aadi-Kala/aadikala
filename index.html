@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Art Gallery</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <div class="full-page-gradient"></div>
+ <body><!-- Navigation -->
+  <nav class="navbar" id="navbar">
+   <div class="nav-container">
+    <a href="#" class="logo" onclick="showPage('home')">
+      <img src="images/logo.png" alt="Artisan Logo" id="site-logo">
+    </a>
+    <ul class="nav-menu">
+     <li class="nav-item"><a href="#" class="nav-link active" data-page="home">Home</a></li>
+     <li class="nav-item"><a href="#" class="nav-link" data-page="portfolio">Portfolio</a></li>
+     <li class="nav-item"><a href="#" class="nav-link" data-page="about">About</a></li>
+     <li class="nav-item"><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-btn" id="mobile-menu-btn"><span></span> <span></span> <span></span>
+    </div>
+   </div>
+  </nav><!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav">
+   <ul class="mobile-nav-menu">
+    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link active" data-page="home">Home</a></li>
+    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link" data-page="portfolio">Portfolio</a></li>
+    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link" data-page="about">About</a></li>
+    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link" data-page="contact">Contact</a></li>
+   </ul>
+  </div><!-- Home Page -->
+  <div class="page active" id="home">
+   <div class="hero">
+    <div class="hero-background">
+      <img src="images/sohrai-painting-bg.jpg" alt="Hero Background" class="hero-bg-image">
+    </div>
+
+    <div class="hero-content">
+     <div class="container">
+      <h1 id="hero-title">Jharkhand's Art Collection</h1>
+      <p id="hero-subtitle">Preserving Jharkhand’s Heritage Through Art</p><button class="cta-button" onclick="showPage('portfolio')">Explore Gallery</button>
+     </div>
+    </div>
+   </div>
+   <div class="banner-section">
+    <div class="container">
+     <div class="featured-section">
+      <h2 class="section-title">Featured Artworks</h2>
+      <p class="section-subtitle">Explore most captivating pieces from Aadi Kala</p>
+     </div>
+     <div class="banner-grid" id="featured-artworks"></div>
+    </div>
+   </div>
+   <!-- Originality Section with Images -->
+    <section class="originality-section">
+      <div class="container">
+        <h2 class="originality-title">Why Our Art is Unique</h2>
+        <p class="originality-subtitle">Every piece tells a story and is crafted with care</p>
+
+        <div class="originality-cards">
+
+          <div class="originality-card">
+            <div class="card-image">
+              <img src="images/handmade.webp" alt="Handmade Art">
+            </div>
+            <div class="card-text">
+              <h3>Purely Handmade</h3>
+              <p>All artworks are crafted using acrylics, organic colors on canvas or handmade paper. No art is ever repeated.</p>
+            </div>
+          </div>
+
+          <div class="originality-card reverse">
+            <div class="card-image">
+              <img src="images/uta.webp" alt="Understanding The Art">
+            </div>
+            <div class="card-text">
+              <h3>Understanding the Art (UTA)</h3>
+              <p>We provide an in-depth document explaining the art's vision and inspiration, giving you a deeper connection with the piece.</p>
+            </div>
+          </div>
+
+          <div class="originality-card">
+            <div class="card-image">
+              <img src="images/certificate.webp" alt="Certificate of Authenticity">
+            </div>
+            <div class="card-text">
+              <h3>Certificate of Authenticity</h3>
+              <p>Each artwork comes with a hand-signed certificate of authenticity directly from the artist.</p>
+            </div>
+          </div>
+
+          <div class="originality-card reverse">
+            <div class="card-image">
+              <img src="images/heritage.webp" alt="Preserving Heritage">
+            </div>
+            <div class="card-text">
+              <h3>Preserving Heritage</h3>
+              <p>We work to preserve Jharkhand’s heritage, providing fair prices to the artists by cutting the high art market costs.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div><!-- Portfolio Page -->
+  <!-- Portfolio Page -->
+<div class="page" id="portfolio">
+  <div class="container">
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="available">Available</button>
+    </div>
+    <div class="portfolio-grid" id="portfolio-grid"></div>
+    <div id="portfolio-pagination" class="pagination-container"></div>
+  </div>
+</div>
+<!-- About Page -->
+  <div class="page" id="about">
+   <div class="container">
+    <div class="about-content">
+     <h1 id="about-title">About Our Gallery</h1>
+     <p id="about-description">At Aadi Kala, we honor the rich tribal art heritage of Jharkhand, bringing its vibrant colors, folklore, and philosophy into every creation. Each artwork is a handmade masterpiece, crafted with acrylics, organic colors, canvas, and handmade paper, reflecting the region’s deep-rooted traditions.</p>
+     <p>Every piece is one of a kind — no two are alike — and carries the essence of Jharkhand’s tribal culture. To celebrate its uniqueness, each artwork comes with a Certificate of Authenticity, ensuring that you own not just a piece of art, but a genuine cultural treasure.</p>
+     <p>We don’t just provide art to hang on your walls; we provide a UTA document (Understanding The Art) with every piece, sharing the story, vision, and inspiration behind it. This allows you to connect deeply with the artwork, understanding the soul of Jharkhand’s tribal artistry.</p>
+     <p>At Aadi Kala, we strive to preserve heritage, empower artisans, and bring authentic tribal artistry to the world. More than just art, we deliver a cultural journey — a blend of tradition, creativity, and meaning that speaks to the heart.</p>
+    </div>
+   </div>
+  </div><!-- Contact Page -->
+  <div class="page" id="contact">
+   <div class="container">
+    <div class="contact-content">
+     <h1>Get In Touch</h1>
+     <div class="contact-info">
+      <div class="contact-item">
+       <svg class="contact-icon" viewbox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+       </svg><span id="contact-email">mail.aadikala@gmail.com</span>
+      </div>
+      <div class="contact-item">
+       <svg class="contact-icon" viewbox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+       </svg><span id="contact-phone">7004454269</span>
+      </div>
+      <div class="contact-item">
+       <svg class="contact-icon" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+       </svg><span id="contact-address">Ranchi, Jharkhand</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Artwork Detail Modal -->
+  <div class="light-modal" id="artwork-modal">
+  <div class="light-modal-content">
+    <div class="light-modal-close modal-close">×</div>
+    <div class="modal-artwork">
+      <div class="modal-image" id="modal-image"></div>
+      <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <div class="detail-item"><span class="detail-label">Artist:</span> <span id="modal-artist"></span></div>
+        <div class="detail-item"><span class="detail-label">Size:</span> <span id="modal-size"></span></div>
+        <div class="detail-item"><span class="detail-label">Medium:</span> <span id="modal-medium"></span></div>
+        <div class="detail-item"><span class="detail-label">Year:</span> <span id="modal-year"></span></div>
+        <div class="detail-item"><span class="detail-label">Style:</span> <span id="modal-style"></span></div>
+        <div class="detail-item" style="margin-top: 20px;">
+          <p id="modal-description"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <p>Order confirmation will be send only via email mail.aadikala@gmail.com. Be careful before making any payment.</p>
+    <br>
+    <p>© 2025 Aadi Kala. All rights reserved.</p>
+    <p>Developed by <a href="https://www.instagram.com/nikhil_kujur" target="_blank">Nikhil Kujur</a></p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/aadikala.jh" target="_blank">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+ </body>
+</html>
+

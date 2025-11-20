@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Fish with borders",
+    "artist": "Neha Nidhi Kujur",
+    "image": "assets/SH-6825-AC-CA-1511.jpg",
+    "size": "6 × 8 inches",
+    "medium": "Acrylic on Canvas",
+    "year": "2025",
+    "style": "Sohrai",
+    "description": "The title “Fish with borders”: Inspired by the Minz totem. The fish swimming despite the borders around it.",
+    "available": false
+  },
+  {
+    "title": "Hunt by the Sun",
+    "artist": "Neha Nidhi Kujur",
+    "image": "assets/SH-121825-AC-HM-1011.jpg",
+    "size": "12 × 18 inches",
+    "medium": "Acrylic on Handmade Paper",
+    "year": "2024",
+    "style": "Sohrai",
+    "description": "Hunt by the Sun — radiant as the sun itself, tribal women of Jharkhand illuminate the path as they perform their ritual hunt of Jani-Shikar.",
+    "available": false
+  },
+  {
+    "title": "Tortoise with time",
+    "artist": "Neha Nidhi Kujur",
+    "image": "assets/SH-6825-AC-CA-511.jpg",
+    "size": "6 × 8 inches",
+    "medium": "Acrylic on Canvas",
+    "year": "2025",
+    "style": "Sohrai",
+    "description": "The title “Tortoise with time”: Inspired by the Kachhap totem. The different sections of colour on the shell defines the different phases of life.",
+    "available": false
+  },
+  {
+   "title": "पतड़ा नू बीड़ी - Sun in forest",
+    "artist": "Neha Nidhi Kujur",
+    "image": "assets/SH-121825-AC-CA-411.jpg",
+    "size": "12 × 18 inches",
+    "medium": "Acrylic on Canvas",
+    "year": "2024",
+    "style": "Sohrai",
+    "description": "The title “पतड़ा नूबीड़ी - Sun in forest”: the sun figures as woman, the forest as her surroundings—power luminous within its own horizon. The art portraits Jani-Shikar.",
+    "available": true
+  }
+]
